@@ -14,7 +14,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
+		let alert = NSAlert()
+		
+		alert.alertStyle = .critical
+		alert.messageText = String(localized: "MessageText")
+		alert.informativeText = String(
+			localized: "DidFinishLaunching"
+			, defaultValue: """
+					Could be multiline text.
+					"""
+			, comment: "Multiline text"
+		)
+		alert.addButton(withTitle: "Quit")
+		alert.runModal()
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
@@ -22,6 +34,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+		return true
+	}
+	
+	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
 		return true
 	}
 
