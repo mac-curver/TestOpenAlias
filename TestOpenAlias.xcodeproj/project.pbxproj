@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		268520C52D1D5F7F002517EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 268520AD2D1D5F7D002517EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 268520B42D1D5F7D002517EC;
-			remoteInfo = TestOpenAlias;
-		};
-		268520CF2D1D5F7F002517EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 268520AD2D1D5F7D002517EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 268520B42D1D5F7D002517EC;
-			remoteInfo = TestOpenAlias;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		268520B52D1D5F7D002517EC /* TestOpenAlias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOpenAlias.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		268520C42D1D5F7F002517EC /* TestOpenAliasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOpenAliasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		268520CE2D1D5F7F002517EC /* TestOpenAliasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOpenAliasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,34 +16,10 @@
 			path = TestOpenAlias;
 			sourceTree = "<group>";
 		};
-		268520C72D1D5F7F002517EC /* TestOpenAliasTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TestOpenAliasTests;
-			sourceTree = "<group>";
-		};
-		268520D12D1D5F7F002517EC /* TestOpenAliasUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TestOpenAliasUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		268520B22D1D5F7D002517EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		268520C12D1D5F7F002517EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		268520CB2D1D5F7F002517EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				268520B72D1D5F7D002517EC /* TestOpenAlias */,
-				268520C72D1D5F7F002517EC /* TestOpenAliasTests */,
-				268520D12D1D5F7F002517EC /* TestOpenAliasUITests */,
 				268520B62D1D5F7D002517EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				268520B52D1D5F7D002517EC /* TestOpenAlias.app */,
-				268520C42D1D5F7F002517EC /* TestOpenAliasTests.xctest */,
-				268520CE2D1D5F7F002517EC /* TestOpenAliasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +70,6 @@
 			productReference = 268520B52D1D5F7D002517EC /* TestOpenAlias.app */;
 			productType = "com.apple.product-type.application";
 		};
-		268520C32D1D5F7F002517EC /* TestOpenAliasTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 268520DB2D1D5F7F002517EC /* Build configuration list for PBXNativeTarget "TestOpenAliasTests" */;
-			buildPhases = (
-				268520C02D1D5F7F002517EC /* Sources */,
-				268520C12D1D5F7F002517EC /* Frameworks */,
-				268520C22D1D5F7F002517EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				268520C62D1D5F7F002517EC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				268520C72D1D5F7F002517EC /* TestOpenAliasTests */,
-			);
-			name = TestOpenAliasTests;
-			packageProductDependencies = (
-			);
-			productName = TestOpenAliasTests;
-			productReference = 268520C42D1D5F7F002517EC /* TestOpenAliasTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		268520CD2D1D5F7F002517EC /* TestOpenAliasUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 268520DE2D1D5F7F002517EC /* Build configuration list for PBXNativeTarget "TestOpenAliasUITests" */;
-			buildPhases = (
-				268520CA2D1D5F7F002517EC /* Sources */,
-				268520CB2D1D5F7F002517EC /* Frameworks */,
-				268520CC2D1D5F7F002517EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				268520D02D1D5F7F002517EC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				268520D12D1D5F7F002517EC /* TestOpenAliasUITests */,
-			);
-			name = TestOpenAliasUITests;
-			packageProductDependencies = (
-			);
-			productName = TestOpenAliasUITests;
-			productReference = 268520CE2D1D5F7F002517EC /* TestOpenAliasUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +82,6 @@
 				TargetAttributes = {
 					268520B42D1D5F7D002517EC = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					268520C32D1D5F7F002517EC = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 268520B42D1D5F7D002517EC;
-					};
-					268520CD2D1D5F7F002517EC = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 268520B42D1D5F7D002517EC;
 					};
 				};
 			};
@@ -202,28 +101,12 @@
 			projectRoot = "";
 			targets = (
 				268520B42D1D5F7D002517EC /* TestOpenAlias */,
-				268520C32D1D5F7F002517EC /* TestOpenAliasTests */,
-				268520CD2D1D5F7F002517EC /* TestOpenAliasUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		268520B32D1D5F7D002517EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		268520C22D1D5F7F002517EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		268520CC2D1D5F7F002517EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,34 +123,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		268520C02D1D5F7F002517EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		268520CA2D1D5F7F002517EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		268520C62D1D5F7F002517EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 268520B42D1D5F7D002517EC /* TestOpenAlias */;
-			targetProxy = 268520C52D1D5F7F002517EC /* PBXContainerItemProxy */;
-		};
-		268520D02D1D5F7F002517EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 268520B42D1D5F7D002517EC /* TestOpenAlias */;
-			targetProxy = 268520CF2D1D5F7F002517EC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		268520D62D1D5F7F002517EC /* Debug */ = {
@@ -446,74 +302,6 @@
 			};
 			name = Release;
 		};
-		268520DC2D1D5F7F002517EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8TSSKQDC4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.7;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.LegoEsprit.TestOpenAliasTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOpenAlias.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestOpenAlias";
-			};
-			name = Debug;
-		};
-		268520DD2D1D5F7F002517EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8TSSKQDC4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.7;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.LegoEsprit.TestOpenAliasTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOpenAlias.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestOpenAlias";
-			};
-			name = Release;
-		};
-		268520DF2D1D5F7F002517EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8TSSKQDC4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.LegoEsprit.TestOpenAliasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = TestOpenAlias;
-			};
-			name = Debug;
-		};
-		268520E02D1D5F7F002517EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P8TSSKQDC4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.LegoEsprit.TestOpenAliasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = TestOpenAlias;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,24 +319,6 @@
 			buildConfigurations = (
 				268520D92D1D5F7F002517EC /* Debug */,
 				268520DA2D1D5F7F002517EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		268520DB2D1D5F7F002517EC /* Build configuration list for PBXNativeTarget "TestOpenAliasTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				268520DC2D1D5F7F002517EC /* Debug */,
-				268520DD2D1D5F7F002517EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		268520DE2D1D5F7F002517EC /* Build configuration list for PBXNativeTarget "TestOpenAliasUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				268520DF2D1D5F7F002517EC /* Debug */,
-				268520E02D1D5F7F002517EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

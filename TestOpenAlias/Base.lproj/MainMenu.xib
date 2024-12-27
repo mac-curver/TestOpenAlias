@@ -689,11 +689,47 @@
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF3-Oe-t9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <clipView key="contentView" drawsBackground="NO" id="3E7-qM-DGp">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" smartInsertDelete="YES" id="a92-Vf-yMK" customClass="DropTextView" customModule="TestOpenAlias" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="480" height="360"/>
+                                    <size key="maxSize" width="480" height="10000000"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="YFl-n8-746" id="EhR-TO-duv"/>
+                                    </connections>
+                                </textView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="hPv-nm-a1e">
+                            <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="AbN-rh-diy">
+                            <rect key="frame" x="464" y="0.0" width="16" height="360"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="Voe-Tx-rLC" id="top-28-M4D"/>
             </connections>
             <point key="canvasLocation" x="200" y="400"/>
         </window>
+        <viewController id="YFl-n8-746">
+            <connections>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="oII-L1-fEW"/>
+            </connections>
+        </viewController>
     </objects>
 </document>

@@ -1,6 +1,26 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "\n\nPlease drop the original file and then\ntry again to drop the alias." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "  Bitte öffnen Sie zunächst die Originaldatei per Drag und Drop. Danach sollte es auch mit der Alias Datei funktionieren. "
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließen"
+          }
+        }
+      }
+    },
     "DidFinishLaunching" : {
       "comment" : "Multiline text",
       "extractionState" : "extracted_with_value",
@@ -8,13 +28,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kann mehrere Zeilen überstreichen"
+            "value" : "Diese kleine App zeigt, dass die Auflösung von Alias Dateien in der Sandbox schief geht.  Wird ein Alias per Drag & Drop auf das Fenster gezogen erhalten wir einen Zugriff verweigert Fehler. Wurde die Originaldatei allerdings einmal geöffnet funktioniert das Öffnen des Alias dagegen.  "
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Could be multiline text."
+            "value" : "This small application shows, that alias resolving fails in sandbox.\nWhen draging and drop an alias for the first time we receive an\naccess not granted error. After having opened the original file once,\nresolving the alias works."
           }
         }
       }
@@ -33,6 +53,19 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Message text"
+          }
+        }
+      }
+    },
+    "Opening failed" : {
+
+    },
+    "Shows wrong alias access" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt fehlerhaften Alias Zugriff"
           }
         }
       }

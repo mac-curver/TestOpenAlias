@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TestOpenAlias
 //
-//  Created by Heinz-Jörg on 26.12.24.
+//  Created by LegoEsprit on 26.12.24.
 //
 
 import Cocoa
@@ -16,16 +16,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		let alert = NSAlert()
 		
-		alert.alertStyle = .critical
-		alert.messageText = String(localized: "MessageText")
+        alert.alertStyle = .informational
+		alert.messageText = String(localized: "Shows wrong alias access")
 		alert.informativeText = String(
 			localized: "DidFinishLaunching"
-			, defaultValue: """
-					Could be multiline text.
-					"""
+			, defaultValue:
+                """
+                This small application shows, that alias resolving fails in sandbox.
+                When draging and drop an alias for the first time we receive an
+                access not granted error. After having opened the original file once,
+                resolving the alias works.
+                """
 			, comment: "Multiline text"
 		)
-		alert.addButton(withTitle: "Quit")
+		alert.addButton(withTitle: "Show")
 		alert.runModal()
 	}
 
