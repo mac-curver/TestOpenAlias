@@ -10,8 +10,6 @@ import UniformTypeIdentifiers
 
 class DropTextView: NSTextView {
     
-    let utTypePboardType = UTType.url
-
 
     override func awakeFromNib() {
         registerForDraggedTypes([.fileURL
@@ -25,9 +23,6 @@ class DropTextView: NSTextView {
                                 ])
     }
     
-    /// Displays a progress indicator.
-    private func prepareForUpdate() {
-    }
 
     /// Displays an error.
     private func handleError(_ error: Error) {
@@ -159,13 +154,11 @@ class DropTextView: NSTextView {
             .urlReadingContentsConformToTypes: acceptedTypes
         ]
         /// - Tag: HandleFilePromises
-        /// sender.enumerateDraggingItems(options: [], for: nil, classes: supportedClasses, searchOptions: searchOptions) { (draggingItem, _, _) in
-
-        sender.enumerateDraggingItems(options: [], for: nil, classes: supportedClasses, searchOptions: searchOptions) { (draggingItem, idx, stop) in
+        sender.enumerateDraggingItems(options: [], for: nil, classes: supportedClasses, searchOptions: searchOptions) {
+            (draggingItem, idx, stop) in
             print(draggingItem.item)
             switch draggingItem.item {
             case let filePromiseReceiver as NSFilePromiseReceiver:
-                self.prepareForUpdate()
                 filePromiseReceiver.receivePromisedFiles(atDestination: self.destinationURL, options: [:],
                                                          operationQueue: self.workQueue) { (fileURL, error) in
                     if let error = error {
